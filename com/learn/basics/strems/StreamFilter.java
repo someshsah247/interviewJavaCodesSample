@@ -32,11 +32,11 @@ public class StreamFilter {
 		//sort using Stream API
 		List<String> strList = new ArrayList<>();
 		//strList.add("")
-		List<Product> list3 = Product.getProfuctList().stream().sorted(Comparator.naturalOrder()).collect(Collectors.toList());
-		System.out.println(list3);
+		//List<Product> list3 = Product.getProfuctList().stream().sorted(Comparator.naturalOrder()).collect(Collectors.toList());
+		//System.out.println(list3);
 		
 		//List<Product> list3 = Product.getProfuctList().stream().sorted((o1, o2) -> o1.compareTo(o2)).collect(Collectors.toList());
-		System.out.println(list3);
+		//System.out.println(list3);
 	}
 
 }

@@ -1,3 +1,9 @@
 Pattern 
 	https://www.youtube.com/watch?v=GjHNGM7KN3w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop&index=5&ab_channel=ApnaCollege
-	
+
+JAVA 8
+	https://www.youtube.com/watch?v=UfJ0lCH7FMM&t=5093s&ab_channel=JavaGuides
+
+SQL - PPT for freshers
+	https://docs.google.com/presentation/d/1Gei3OTcvBHXk38hCqe_xWhAQxQbXJnE0rfjx_gM5kqo/edit?usp=sharing
+
