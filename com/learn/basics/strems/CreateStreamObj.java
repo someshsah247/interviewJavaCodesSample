@@ -1,15 +1,12 @@
 package com.learn.basics.strems;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class CreateStreamObj {
 
 	public static void main(String[] args) {
-		
+
 		// create stream
 		Stream<String> stream = Stream.of("somesh","ram","rahem","aksah","rohit");
 		stream.forEach(System.out::println);

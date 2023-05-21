@@ -27,6 +27,5 @@ public class FindNthHightest {
 
         // For 3rd higest Element  -- skip(2) is used
         System.out.println( "6--  " +list.stream().sorted((x,y) -> y-x).skip(2).findFirst());
-
     }
 }

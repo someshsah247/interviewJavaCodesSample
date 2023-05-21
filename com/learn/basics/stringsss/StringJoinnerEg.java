@@ -12,7 +12,7 @@ public class StringJoinnerEg {
         sj1.add("sah");
         sj1.add("Rajat");
         sj1.add("Jha");
-        System.out.println(sj1);
+        System.out.println(sj1); // Somesh#sah#Rajat#Jha
 
         // constructor takes 3 --  delimiter , prefix , suffix
         StringJoiner sj2 = new StringJoiner(",", "start -> "," <- end.");
@@ -20,7 +20,7 @@ public class StringJoinnerEg {
         sj2.add("Rahul");
         sj2.add("Rajat");
         sj2.add("Shalini");
-        System.out.println(sj2);
+        System.out.println(sj2); // start -> Somesh,Rahul,Rajat,Shalini <- end.
 
     }
 
