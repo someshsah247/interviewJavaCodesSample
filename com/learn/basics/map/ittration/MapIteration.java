@@ -23,8 +23,8 @@ public class MapIteration {
         map.put("10","ten");
 
 
+        //convert map into entry set
         Set<Map.Entry<String, String>> entries = map.entrySet();
-        
         // way 1
         Iterator<Map.Entry<String,String>> iterator = entries.iterator();
 

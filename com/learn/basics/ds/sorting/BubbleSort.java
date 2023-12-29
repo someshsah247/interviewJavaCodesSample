@@ -2,16 +2,6 @@ package com.learn.basics.ds.sorting;
 
 public class BubbleSort {
 
-    public static void main(String[] args) {
-        // array 
-        int arr[] = {8,4,9,2,-4,-1,10,1};
-        // lop
-        
-    }
-    
-    
-    
-    /*
     public static void main(String[] args){
         // Custom input array
         int arr[] = { 4, 3, 2, 1 , -6 , -8 };
@@ -36,6 +26,5 @@ public class BubbleSort {
             System.out.print(arr[i] + " ");
         }
     }
-    
-     */
+
 }

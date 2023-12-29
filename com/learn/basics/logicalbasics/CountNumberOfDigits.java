@@ -8,7 +8,7 @@ public class CountNumberOfDigits {
         int count = 0;
 
         while (number>0){
-            number = number / 10;
+            number = number / 10; // remove the last digit
             count++;
         }
 

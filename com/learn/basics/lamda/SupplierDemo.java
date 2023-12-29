@@ -15,7 +15,7 @@ This is a functional interface whose functional method is get().
 public class SupplierDemo {
 
 	public static void main(String[] args) {
-		Supplier< LocalDate> supplier = ()-> LocalDate.now();
+		Supplier< LocalDate> supplier = LocalDate::now;
 		System.out.println(supplier.get());
 	}
 
