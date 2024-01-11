@@ -13,6 +13,7 @@ package com.learn.basics.interview;
             int evenSecond = 0;
 
             for (int i = 0; i < array.length; ++i) {
+
                 if (evenOne == 0 && array[i] % 2 == 0) {
                     evenOne = array[i];
                 }
