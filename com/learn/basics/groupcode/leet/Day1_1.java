@@ -1,4 +1,4 @@
-package com.learn.basics.groupcode.somesh.leet;
+package com.learn.basics.groupcode.leet;
 
 import java.util.Arrays;
 
