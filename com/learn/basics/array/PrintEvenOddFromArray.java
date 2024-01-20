@@ -23,13 +23,15 @@ public class PrintEvenOddFromArray {
         }
 
         for (int i = 0; i < a.length; i++) {
-            System.out.println(even[i]);
+            if(a[i]!=0)
+            System.out.print(even[i] + " ");
         }
 
-        System.out.println("===========");
+        System.out.println(" \n ===========");
 
         for (int i = 0; i < a.length; i++) {
-            System.out.println(odd[i]);
+            if(a[i]!=0)
+            System.out.print(odd[i]+" ");
         }
 
     }
