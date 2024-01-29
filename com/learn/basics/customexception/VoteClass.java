@@ -8,16 +8,16 @@ public class VoteClass {
 
 		try {
 		if(age>18) {
-			System.out.println("Vaild Age");
+			System.out.println("Valid Age.");
 		}else {
-			throw new InvalidAgeException("ERROR");
+			throw new InvalidAgeException("Not a Valid Age.");
 		}
 
 		}catch (InvalidAgeException e) {
-			System.out.println(e.getMessage()+12);
+			System.out.println(e.getMessage());
 		}
 		finally {
-			System.out.println("Working finally.");
+			System.out.println("Working Finally.");
 		}
 
 	}

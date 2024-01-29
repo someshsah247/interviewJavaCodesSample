@@ -21,7 +21,21 @@ public class OccurringOddNumber {
             }
         }
 
-        System.out.println(hm);
+        System.out.println(hm); // to show all data
+
+        String odd = "";
+        String even = "";
+        // all odd and even data
+        for (int i = 0; i <hm.size() ; i++) {
+
+            if(hm.get(arr[i])%2==0)
+                odd.concat(hm.keySet().toString()+" ");
+            else
+                even.concat(hm.keySet().toString() + " ");
+        }
+
+        System.out.println(even);
+        System.out.println(odd);
     }
     
 }
