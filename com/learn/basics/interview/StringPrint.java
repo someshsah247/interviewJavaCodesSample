@@ -2,6 +2,8 @@ package com.learn.basics.interview;
 
 public class StringPrint {
 
+    // PWD
+
     public static void main(String[] args) {
 
         String first = "abcd";

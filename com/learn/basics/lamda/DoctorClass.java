@@ -2,6 +2,8 @@ package com.learn.basics.lamda;
 
 import lombok.*;
 
+import java.util.List;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -12,4 +14,5 @@ public class DoctorClass {
     private String name;
     private String city;
     private int salary;
+    private List<String> specialist;
 }

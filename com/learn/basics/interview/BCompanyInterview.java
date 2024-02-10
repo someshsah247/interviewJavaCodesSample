@@ -6,6 +6,8 @@ import java.util.Arrays;
 // TransUnion
 public class BCompanyInterview {
 
+    // TransUnion
+
     public static void main(String[] args) {
         // Array
         int[] intArray = new int[]{0,1,2,3,5,6,7,9,10,24,40};
