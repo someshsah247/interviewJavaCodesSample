@@ -8,6 +8,8 @@ package com.learn.basics.interview;
             System.out.println(evens[0] + " " + evens[1]);
         }
 
+        // NOTE -- if koi bhi if or else block execute ho jaye ga to fir next itration se code chale ga
+
         public static int[] getOdds(int[] array) {
             int evenOne = 0;
             int evenSecond = 0;
