@@ -1,10 +1,7 @@
 package com.learn.basics.trickyques;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class LogicalCode {
@@ -68,7 +65,71 @@ public class LogicalCode {
         // time --> n^2 worst -- best nlogn
     }
 
+    private static int[] getWordFindCount(List<String> words , String ch ){
+        List<Integer> returnList = new ArrayList<>();
+        for (int i = 0; i < words.size(); i++) {
+            if(words.get(i).contains(ch)){
+                returnList.add(i);
+            }
+        }
+        return returnList.stream().mapToInt(x->x.intValue()).toArray();
+    }
 
+    private static  void returnParenthisisAsO(String str){
+        String[] strArr = str.split("");
+        String result = "";
+        System.out.println(Arrays.toString(Arrays.stream(strArr).toArray()));
+        for (int i = 0; i < strArr.length; i++) {
+            if(strArr.length > i && Objects.equals(strArr[i], "(") && Objects.equals(strArr[i + 1], ")")){
+                result+= "o";
+                i++;
+            }else {
+                if(strArr.length > i && !Objects.equals(strArr[i], "(") && !Objects.equals(strArr[i], ")")  )
+                    result+= strArr[i];
+            }
+        }
+        System.out.println(result);
+    }
+
+    private static boolean robotReturnToOrigin(String instruction){
+        Map<Character,Integer> map = new HashMap<>();
+        for (int i = 0; i < instruction.length() ; i++) {
+            if(map.containsKey(instruction.charAt(i)))
+                map.put(instruction.charAt(i),map.get(instruction.charAt(i)).intValue()+1);
+            else
+                map.put(instruction.charAt(i),1);
+            }
+
+            int U = map.containsKey('U') ? map.get('U') : 0;
+            int D = map.containsKey('D') ? map.get('D') : 0;
+            int L = map.containsKey('L') ? map.get('L') : 0;
+            int R = map.containsKey('R') ? map.get('R') : 0;
+
+            if((U == D) && (L==R)){
+                    return true;
+            }
+            else {
+                return false;
+            }
+
+        /*
+        public boolean judgeCircle(String moves) {
+        int dirA=0, dirB=0;
+        for(int i=0; i<moves.length(); i++) {
+            if(moves.charAt(i)=='U') {
+                dirA++;
+            } else if(moves.charAt(i)=='D') {
+                dirA--;
+            } else if(moves.charAt(i)=='L') {
+                dirB++;
+            } else if(moves.charAt(i)=='R') {
+                dirB--;
+            }
+        }
+        return (dirA==0 && dirB==0) ? true : false;
+    }
+         */
+    }
 
 
 
@@ -91,7 +152,17 @@ public class LogicalCode {
         //containsAllAlphabets("thequickbrownfoxjumpsoverthelazydog");
         //containsAllAlphabets("leetcode");
 
+        List<String> names = new ArrayList<>();
+        names.add("somesh"); names.add("Shalini"); names.add("ANshu"); names.add("Pawan"); names.add("roHit"); names.add("sai");
+        //System.out.println(Arrays.toString(getWordFindCount(names, "s")));
 
+        //returnParenthisisAsO("G()()()()(al)");
+        //returnParenthisisAsO("(al)G(al)()()G");
+        //returnParenthisisAsO("(al)(al)");
+
+        System.out.println(robotReturnToOrigin("UDUD"));
+        System.out.println(robotReturnToOrigin("UD"));
+        System.out.println(robotReturnToOrigin("UDL"));
 
     }
 

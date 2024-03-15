@@ -1,12 +1,10 @@
 package com.learn.basics.interview;
 
-import java.util.Arrays;
-
-// Remove duplicate elements from sorted Array in place.
+// Remove duplicate elements from sorted Array in place. [do not use collections and sorting]
 //Input: arr[] = {2, 2, 2, 2, 2}
 //Output: arr[] = {2, 0, 0, 0}
 //Input: arr[] = {1, 2, 2, 3, 4, 4, 4, 5, 5}
-//Output: arr[] = { 1, 2, 3, 4, 5,0, 0, 0, 0}
+//Output: arr[] = { 1, 2, 3, 4, 5, 0, 0, 0, 0}
 public class WiproClient {
 
 //    Input: s = “geeks quiz practice code”
@@ -27,7 +25,13 @@ public class WiproClient {
             return sb.toString();
         }
         return s;
+    }
 
+    // Duplicate wala
+    //Input: arr[] = {1, 2, 2, 3, 4, 4, 4, 5, 5}
+    //Output: arr[] = { 1, 2, 3, 4, 5,0, 0, 0, 0}
+
+    private static void dublicateChageZero(int arr){
 
     }
 
