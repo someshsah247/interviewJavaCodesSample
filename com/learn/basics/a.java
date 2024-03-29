@@ -2,7 +2,7 @@ package com.learn.basics;
 
 public class a {
 
-        public static void test(int s)
+        public static void test(String s)
         {
             System.out.println("In String");
         }

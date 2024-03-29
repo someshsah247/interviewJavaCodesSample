@@ -54,7 +54,7 @@ public class LambdaTwist {
         list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet().forEach((x -> System.out.println(x.getKey() + " - "+ x.getValue())));
     }
 
-    // Find out highest occurence of number in integer array
+    // Find out highest occurrence of number in integer array
     private static void highestoccurenceInt(int[] arr){
         Set<Map.Entry<Integer,Long>> map = Arrays.stream(arr).boxed().collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet();
         System.out.println(map.stream().max(Comparator.comparingLong(Map.Entry::getValue)).get()) ;
