@@ -1,8 +1,6 @@
 package com.learn.basics.lamda;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -106,7 +104,19 @@ public class NumberLambda {
 
         System.out.println("8) Sort array using Streams/ Sort in reverse order ");
 
+        // https://www.youtube.com/watch?v=Ed26bTWWk3I&list=PLFGoYjJG_fqp52WKlmgF4cV72KS9_9tih&index=2&ab_channel=NaveenAutomationLabs
 
+        //1. sum of list of integers
+       Optional<Integer> sum = Arrays.stream(intArr).boxed().reduce((a, b)->a+b);
+       System.out.println("sum - "+ sum);
+
+       //2. avg
+        OptionalDouble avg = Arrays.stream(intArr).boxed().mapToInt(x-> x.intValue()).average();
+        System.out.println("Avg - "+ avg);
+
+        // 3. filter even +  map (multiply by 2)
+        List<Integer> listFilterMap = Arrays.stream(intArr).boxed().filter(x->x%2==0).map(x->x*2).collect(Collectors.toList());
+        System.out.println("listFilterMap - "+ listFilterMap);
 
 
 
