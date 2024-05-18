@@ -35,7 +35,7 @@ Find 3 numbers in an array which can sum up to 7.
 1. sorting
 2. remove all elements x>7
 3. for loop from i=0 to i<=new size
-4. in foor loop j=0 ,k=1,l=2 till end
+4. in for loop j=0 ,k=1,l=2 till end
 5. j ++ , k++ ,l++;
 6. repeat step 4 & 5;
 7. if found
